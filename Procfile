@@ -1,1 +1,1 @@
-web: java -war target/Restaurant.war 
+web: java -jar target/where_is_my_restaurant.jar 
