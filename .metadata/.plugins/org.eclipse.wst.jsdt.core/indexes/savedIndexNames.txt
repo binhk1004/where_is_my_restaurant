@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\usr\eclipse-workspace\where_is_my_restaurant\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2318729763.index
+1905681215.index
+2376274352.index
+2617529129.index
+3467802609.index
+3682719392.index

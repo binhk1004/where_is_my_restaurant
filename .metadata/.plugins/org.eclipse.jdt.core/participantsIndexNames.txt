@@ -1,0 +1,5 @@
+INDEX VERSION 1.131
+C:\Users\usr\eclipse-workspace\where_is_my_restaurant\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\127466361.index
+\Restaruant\src\main\java
+C:\Users\usr\eclipse-workspace\where_is_my_restaurant\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3611092854.index
+\Restaruant\.apt_generated
