@@ -9,6 +9,7 @@
 	<packaging>war</packaging>
 	<version>1.0.0-BUILD-SNAPSHOT</version>
 	<properties>
+		 <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java-version>1.8</java-version>
 		<encoding-char>UTF-8</encoding-char>
 		<org.springframework-version>5.1.5.RELEASE</org.springframework-version>
@@ -186,10 +187,10 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
+					<encoding>UTF-8</encoding>
 					<compilerArgument>-Xlint:all</compilerArgument>
 					<showWarnings>true</showWarnings>
 					<showDeprecation>true</showDeprecation>
-					 <encoding>${encoding-char}</encoding>
 				</configuration>
 			</plugin>
 			<plugin>
