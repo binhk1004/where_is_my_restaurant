@@ -60,14 +60,14 @@ public class MemberLogin extends HttpServlet {
 		if(result == 1) {
 			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter out = response.getWriter();
-			out.println("<script>alert('·Î±×ÀÎÀÌ ¿Ï·á µÇ¾ú½À´Ï´Ù.');window.open('about:blank','_self').self.close();opener.document.location.reload();</script>");
+			out.println("<script>alert('ë¡œê·¸ì¸ì´ ì™„ë£Œ ë˜ì—ˆìŠµë‹ˆë‹¤.');window.open('about:blank','_self').self.close();opener.document.location.reload();</script>");
 			out.flush();
 			memberSession(session, request, pvo);
 		}
 		else if(result ==5) {
 			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter out = response.getWriter();
-			out.println("<script>alert('°ü¸®ÀÚ·Î ·Î±×ÀÎ µÇ¾ú½À´Ï´Ù.');window.open('about:blank','_self').self.close();opener.document.location.reload();</script>");
+			out.println("<script>alert('ê´€ë¦¬ìë¡œ ë¡œê·¸ì¸ ë˜ì—ˆìŠµë‹ˆë‹¤.');window.open('about:blank','_self').self.close();opener.document.location.reload();</script>");
 			out.flush();
 			adminSession(session, request, pvo);
 			
@@ -75,13 +75,14 @@ public class MemberLogin extends HttpServlet {
 		else if(result == 0) {
 			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter out = response.getWriter();
-			out.println("<script>alert('¾ÆÀÌµğ È¤Àº ºñ¹Ğ¹øÈ£°¡ Æ²¸³´Ï´Ù.');history.back()</script>");
+			out.println("\r\n" + 
+					"<script>alert('ì•„ì´ë”” í˜¹ì€ ë¹„ë°€ë²ˆí˜¸ë¥¼ ë‹¤ì‹œ í™•ì¸í•´ì£¼ì„¸ìš”.');window.open('about:blank','_self').self.close();opener.document.location.reload();</script>");
 			out.flush();	
 		}
 		else if(result == -1) {
 			response.setContentType("text/html; charset=UTF-8");
 			PrintWriter out = response.getWriter();
-			out.println("<script>alert('Á¸ÀçÇÏÁö ¾Ê´Â °èÁ¤ÀÔ´Ï´Ù.');history.back()</script>");
+			out.println("<script>alert('ë“±ë¡ë˜ì§€ ì•Šì€ ê³„ì • ì…ë‹ˆë‹¤.');window.open('about:blank','_self').self.close();opener.document.location.reload();</script>");
 			out.flush();	
 		}
 		

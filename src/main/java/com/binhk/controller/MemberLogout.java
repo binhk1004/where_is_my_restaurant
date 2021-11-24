@@ -43,7 +43,7 @@ public class MemberLogout extends HttpServlet {
 				+ "return results == null ? \"\" : decodeURIComponent(results[1].replace(/\\+/g, \" \")); }");
 		out.println("var test = getParameterByName('localName')");
 		out.println("console.log(test)");
-		out.println("alert('·Î±×¾Æ¿ôÀÌ ¿Ï·á µÇ¾ú½À´Ï´Ù.');");
+		out.println("alert('ë¡œê·¸ì•„ì›ƒì´ ì™„ë£Œ ë˜ì—ˆìŠµë‹ˆë‹¤.');");
 		out.println("location.replace('/Map?localName='+test)");
 		out.println("</script>");
 	}

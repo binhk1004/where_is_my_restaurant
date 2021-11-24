@@ -63,7 +63,7 @@ public class MemberJoin extends HttpServlet {
 		
 		response.setContentType("text/html; charset=euc-kr");
 		PrintWriter out = response.getWriter();
-		out.println("<script>alert('È¸¿ø°¡ÀÔÀÌ ¿Ï·á µÇ¾ú½À´Ï´Ù.');window.open('about:blank','_self').self.close();</script>");
+		out.println("<script>alert('íšŒì›ê°€ì…ì´ ì™„ë£Œë˜ì—ˆìŠµë‹ˆë‹¤.');window.open('about:blank','_self').self.close();</script>");
 		out.flush();
 		
 		/* response.sendRedirect("/"); */

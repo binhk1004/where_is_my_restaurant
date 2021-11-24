@@ -25,7 +25,7 @@
             </div>
             <div class="memeberform">
 	            <label> 비밀번호 : </label>
-	            <input class="form-control" name="memberPw" placeholder="비밀번호" id="floatingTextarea2"></input>
+	            <input class="form-control" name="memberPw" type="password" placeholder="비밀번호" id="floatingTextarea2"></input>
 	       	</div>
 	       	<div class="memeberform">
 	            <label> 이름 : </label>

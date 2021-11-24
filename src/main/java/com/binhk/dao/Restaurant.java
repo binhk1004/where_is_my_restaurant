@@ -15,9 +15,9 @@ import com.binhk.model.RestautantVO;
 
 public class Restaurant {
 	public void create(RestautantVO pvo) {
-		String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-		String user = "sqbtujokususxkz0";
-		String password = "mfhdn6r5tkfdbw86";
+		String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+		String user = "admin";
+		String password = "qlsgus4613";
 		StringBuffer qry = new StringBuffer()
 				.append(" INSERT INTO review ")
 				.append(" SET star = ?, ")
@@ -72,9 +72,9 @@ public class Restaurant {
 
 		try {
 
-			String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-			String user = "sqbtujokususxkz0";
-			String password = "mfhdn6r5tkfdbw86";
+			String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+			String user = "admin";
+			String password = "qlsgus4613";
 			StringBuffer qry = new StringBuffer().append(" SELECT * FROM review ")
 					.append(" WHERE address = "+"'"+getaddress+"'")
 					.append(" AND memberNum = " +"'"+getmembernum+"'");
@@ -128,9 +128,9 @@ public class Restaurant {
 
 		try {
 			
-			String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-			String user = "sqbtujokususxkz0";
-			String password = "mfhdn6r5tkfdbw86";
+			String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+			String user = "admin";
+			String password = "qlsgus4613";
 			StringBuffer qry = new StringBuffer()
 					.append(" SELECT * FROM review ")
 					.append(" WHERE num ="+num)
@@ -181,9 +181,9 @@ public class Restaurant {
 		Connection conn = null;
 		PreparedStatement stmt = null;
 		
-		String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-		String user = "sqbtujokususxkz0";
-		String password = "mfhdn6r5tkfdbw86";
+		String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+		String user = "admin";
+		String password = "qlsgus4613";
 		StringBuffer qry = new StringBuffer()				
 			.append(" UPDATE review ")
 			.append(" SET star = "+pvo.getStar()+",")
@@ -228,9 +228,9 @@ public class Restaurant {
 		
 		try {
 			
-			String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-			String user = "sqbtujokususxkz0";
-			String password = "mfhdn6r5tkfdbw86";
+			String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+			String user = "admin";
+			String password = "qlsgus4613";
 			StringBuffer qry = new StringBuffer()
 					.append(" DELETE FROM review ")
 					.append(" WHERE num = ? ")
@@ -265,9 +265,9 @@ public class Restaurant {
 	}
 
 	public void memberjoin(MemberVO pvo) {
-		String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-		String user = "sqbtujokususxkz0";
-		String password = "mfhdn6r5tkfdbw86";
+		String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+		String user = "admin";
+		String password = "qlsgus4613";
 		StringBuffer qry = new StringBuffer()
 				.append(" INSERT INTO smart.member ")
 				.append(" SET memberId = ?, ")
@@ -312,9 +312,9 @@ public class Restaurant {
 	}
 		
 		public int memberlogin(MemberVO pvo) {
-			String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-			String user = "sqbtujokususxkz0";
-			String password = "mfhdn6r5tkfdbw86";
+			String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+			String user = "admin";
+			String password = "qlsgus4613";
 			StringBuffer qry = new StringBuffer()
 					.append(" SELECT memberPw, memberNum FROM smart.member WHERE memberId = ? ");		
 			Object admin = "admin";
@@ -377,9 +377,9 @@ public class Restaurant {
 			ArrayList<RestautantVO> al = new ArrayList<RestautantVO>();
 
 			try {
-				String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-				String user = "sqbtujokususxkz0";
-				String password = "mfhdn6r5tkfdbw86";
+				String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+				String user = "admin";
+				String password = "qlsgus4613";
 				StringBuffer qry = new StringBuffer()
 						.append(" SELECT * FROM review ")
 						.append(" WHERE memberNum = "+getmembernum);
@@ -429,9 +429,9 @@ public class Restaurant {
 
 			try {
 				
-				String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-				String user = "sqbtujokususxkz0";
-				String password = "mfhdn6r5tkfdbw86";
+				String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+				String user = "admin";
+				String password = "qlsgus4613";
 				StringBuffer qry = new StringBuffer()
 						.append(" SELECT * FROM review ")
 						.append(" WHERE num ="+num)
@@ -484,13 +484,13 @@ public class Restaurant {
 			
 			try {
 				
-				String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-				String user = "sqbtujokususxkz0";
-				String password = "mfhdn6r5tkfdbw86";
+				String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+				String user = "admin";
+				String password = "qlsgus4613";
 				StringBuffer qry = new StringBuffer()
 						.append(" DELETE FROM review ")
 						.append(" WHERE num = ? ")
-						.append( " AND membernum = ?");
+						.append( " AND memberNum = ?");
 				String sql = qry.toString();
 				
 				Class.forName("com.mysql.jdbc.Driver");
@@ -525,9 +525,9 @@ public class Restaurant {
 			Connection conn = null;
 			PreparedStatement stmt = null;
 			
-			String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-			String user = "sqbtujokususxkz0";
-			String password = "mfhdn6r5tkfdbw86";
+			String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+			String user = "admin";
+			String password = "qlsgus4613";
 			StringBuffer qry = new StringBuffer()				
 				.append(" UPDATE review ")
 				.append(" SET star = "+pvo.getStar()+",")
@@ -572,9 +572,9 @@ public class Restaurant {
 			ArrayList<RestautantVO> al = new ArrayList<RestautantVO>();
 
 			try {
-				String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-				String user = "sqbtujokususxkz0";
-				String password = "mfhdn6r5tkfdbw86";
+				String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+				String user = "admin";
+				String password = "qlsgus4613";
 				StringBuffer qry = new StringBuffer()
 						.append(" SELECT * FROM review AS r ")
 						.append(" join member as m on m.membernum = r.memberNum ");
@@ -624,9 +624,9 @@ public class Restaurant {
 					Connection conn = null;
 					PreparedStatement stmt = null;
 					
-					String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-					String user = "sqbtujokususxkz0";
-					String password = "mfhdn6r5tkfdbw86";
+					String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+					String user = "admin";
+					String password = "qlsgus4613";
 					StringBuffer qry = new StringBuffer()				
 						.append(" UPDATE review ")
 						.append(" SET star = "+pvo.getStar()+",")
@@ -671,9 +671,9 @@ public class Restaurant {
 
 			try {
 				
-				String url = "jdbc:mysql://ljtb9ia3h1pgevwb1.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/mnllowcoxyjovp0n?useSSL=false&characterEncoding=UTF-8&serverTimezone=Asia/Seoul";
-				String user = "sqbtujokususxkz0";
-				String password = "mfhdn6r5tkfdbw86";
+				String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+				String user = "admin";
+				String password = "qlsgus4613";
 				StringBuffer qry = new StringBuffer()
 						.append(" SELECT * FROM review ")
 						.append(" WHERE num ="+num);
