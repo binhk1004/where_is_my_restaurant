@@ -36,7 +36,7 @@ public class AdminDelete extends HttpServlet {
 		
 		String getmembernum = request.getParameter("membernum");
 		
-		String url = "/AdminReview??membernum="+getmembernum;
+		String url = "/AdminReview?membernum="+getmembernum;
 		
 		try {
 			int num = Integer.parseInt(request.getParameter("num"));

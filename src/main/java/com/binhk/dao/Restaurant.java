@@ -488,7 +488,7 @@ public class Restaurant {
 				String user = "admin";
 				String password = "qlsgus4613";
 				StringBuffer qry = new StringBuffer()
-						.append(" DELETE FROM review ")
+						.append(" DELETE FROM smart.review ")
 						.append(" WHERE num = ? ")
 						.append( " AND memberNum = ?");
 				String sql = qry.toString();
