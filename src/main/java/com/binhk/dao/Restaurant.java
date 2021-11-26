@@ -15,7 +15,7 @@ import com.binhk.model.RestautantVO;
 
 public class Restaurant {
 	public void create(RestautantVO pvo) {
-		String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+		String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 		String user = "admin";
 		String password = "qlsgus4613";
 		StringBuffer qry = new StringBuffer()
@@ -72,7 +72,7 @@ public class Restaurant {
 
 		try {
 
-			String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+			String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 			String user = "admin";
 			String password = "qlsgus4613";
 			StringBuffer qry = new StringBuffer().append(" SELECT * FROM review ")
@@ -128,7 +128,7 @@ public class Restaurant {
 
 		try {
 			
-			String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+			String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 			String user = "admin";
 			String password = "qlsgus4613";
 			StringBuffer qry = new StringBuffer()
@@ -181,7 +181,7 @@ public class Restaurant {
 		Connection conn = null;
 		PreparedStatement stmt = null;
 		
-		String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+		String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 		String user = "admin";
 		String password = "qlsgus4613";
 		StringBuffer qry = new StringBuffer()				
@@ -228,7 +228,7 @@ public class Restaurant {
 		
 		try {
 			
-			String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+			String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 			String user = "admin";
 			String password = "qlsgus4613";
 			StringBuffer qry = new StringBuffer()
@@ -265,7 +265,7 @@ public class Restaurant {
 	}
 
 	public void memberjoin(MemberVO pvo) {
-		String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+		String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 		String user = "admin";
 		String password = "qlsgus4613";
 		StringBuffer qry = new StringBuffer()
@@ -312,7 +312,7 @@ public class Restaurant {
 	}
 		
 		public int memberlogin(MemberVO pvo) {
-			String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+			String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 			String user = "admin";
 			String password = "qlsgus4613";
 			StringBuffer qry = new StringBuffer()
@@ -377,7 +377,7 @@ public class Restaurant {
 			ArrayList<RestautantVO> al = new ArrayList<RestautantVO>();
 
 			try {
-				String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+				String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 				String user = "admin";
 				String password = "qlsgus4613";
 				StringBuffer qry = new StringBuffer()
@@ -429,7 +429,7 @@ public class Restaurant {
 
 			try {
 				
-				String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+				String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 				String user = "admin";
 				String password = "qlsgus4613";
 				StringBuffer qry = new StringBuffer()
@@ -484,7 +484,7 @@ public class Restaurant {
 			
 			try {
 				
-				String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+				String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 				String user = "admin";
 				String password = "qlsgus4613";
 				StringBuffer qry = new StringBuffer()
@@ -494,6 +494,7 @@ public class Restaurant {
 				String sql = qry.toString();
 				
 				Class.forName("com.mysql.jdbc.Driver");
+				System.out.println(sql);
 				
 				
 				conn = DriverManager.getConnection(url, user, password);
@@ -504,6 +505,8 @@ public class Restaurant {
 				stmt.setInt(1, num);
 				stmt.setString(2, getmembernum);
 				stmt.executeUpdate();
+				
+				System.out.println(stmt);
 				
 			} catch (Exception e) {
 				// TODO Auto-generated catch block
@@ -525,7 +528,7 @@ public class Restaurant {
 			Connection conn = null;
 			PreparedStatement stmt = null;
 			
-			String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+			String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 			String user = "admin";
 			String password = "qlsgus4613";
 			StringBuffer qry = new StringBuffer()				
@@ -572,7 +575,7 @@ public class Restaurant {
 			ArrayList<RestautantVO> al = new ArrayList<RestautantVO>();
 
 			try {
-				String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+				String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 				String user = "admin";
 				String password = "qlsgus4613";
 				StringBuffer qry = new StringBuffer()
@@ -624,7 +627,7 @@ public class Restaurant {
 					Connection conn = null;
 					PreparedStatement stmt = null;
 					
-					String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+					String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 					String user = "admin";
 					String password = "qlsgus4613";
 					StringBuffer qry = new StringBuffer()				
@@ -671,7 +674,7 @@ public class Restaurant {
 
 			try {
 				
-				String url = "jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8";
+				String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
 				String user = "admin";
 				String password = "qlsgus4613";
 				StringBuffer qry = new StringBuffer()
@@ -716,6 +719,49 @@ public class Restaurant {
 			}
 			
 			return pvo;		
+		}
+		
+		public void admindelete(int num) {
+			Connection conn = null;
+			PreparedStatement stmt = null;
+			
+			try {
+				
+				String url = "jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8";
+				String user = "admin";
+				String password = "qlsgus4613";
+				StringBuffer qry = new StringBuffer()
+						.append(" DELETE FROM smart.review ")
+						.append(" WHERE num = ? ");
+				String sql = qry.toString();
+				
+				Class.forName("com.mysql.jdbc.Driver");
+				System.out.println(sql);
+				
+				
+				conn = DriverManager.getConnection(url, user, password);
+				
+				
+				stmt = conn.prepareStatement(sql);
+				
+				stmt.setInt(1, num);
+				stmt.executeUpdate();
+				
+				System.out.println(stmt);
+				
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} finally {
+				
+				try {
+					if(conn != null) conn.close();
+					if(stmt != null) stmt.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
 		}
 
 

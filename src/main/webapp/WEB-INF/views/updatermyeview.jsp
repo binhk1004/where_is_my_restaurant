@@ -18,7 +18,7 @@ RestautantVO pvo
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link type="text/css" rel='stylesheet' href=<c:url value="/resources/css/updatemyreview.css"/>/>
         <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-        <title>Document</title>
+        <title>리뷰수정</title>
     </head>
     <body>
         <div>

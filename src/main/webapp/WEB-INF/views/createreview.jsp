@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel='stylesheet' href=<c:url value="/resources/css/createreview.css"/>/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>리뷰등록</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
 		<div class="title">
 	   		<h3>별점과 후기를 입력해주세요.</h3>
 	   	</div>
-	    <form method="post" action="" >
+	    <form method="post" action="" onsubmit="return emptyCheck()">
 		    <div class="star-rating">
 		        <input type="radio" id="5-stars" name="star" value="5" />
 		        <label for="5-stars" class="star">&#9733;</label>
@@ -45,9 +46,30 @@
 		        </div>
 		    </div>
 		    <div class="button">
-		        <button type="submit" class="btn btn-primary">등록</button>
+		        <button type="submit" id="checkBtn" class="btn btn-primary">등록</button>
 		    </div>
 	    </form>
     </div>
 </body>
+<script>
+	function emptyCheck(){
+		var checkStar = $('input[name="star"]:checked').val();
+	    var checkReview = $('textarea[name="review"]').val();
+	  
+       if (checkStar == undefined) {
+          alert("별점을 체크해주세요.");
+          return false;
+        }
+       
+       else if(checkReview == "") {
+       	alert("리뷰내용을 작성해주세요.");
+       	setTimeout(function(){
+    		$('#floatingTextarea2').focus()}, 50);
+       	return false;
+        }
+       
+       else return true;
+}
+	
+</script>
 </html>

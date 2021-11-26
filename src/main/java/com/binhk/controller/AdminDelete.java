@@ -41,7 +41,7 @@ public class AdminDelete extends HttpServlet {
 		try {
 			int num = Integer.parseInt(request.getParameter("num"));
 						
-			new Restaurant().deletemyreview(num, getmembernum);
+			new Restaurant().admindelete(num);
 			
 		} catch (Exception e) {
 //			url = "errorPage500.jsp";

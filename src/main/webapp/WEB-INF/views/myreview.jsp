@@ -15,7 +15,7 @@
         <link type="text/css" rel='stylesheet' href=<c:url value="/resources/css/readreview.css"/>/>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <title>Document</title>
+        <title>내가 작성한 리뷰</title>
     </head>
     <body>
     <input type="hidden" name="memberNum" value="${memberNum}"/>

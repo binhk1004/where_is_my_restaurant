@@ -8,7 +8,7 @@
 	<!-- Root Context: defines shared resources visible to all other web components -->
 	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
 		<property name="driverClassName" value="com.mysql.cj.jdbc.Driver"></property>
-		<property name="jdbcUrl" value="jdbc:mysql://database-2.clbeneesls2t.ap-northeast-2.rds.amazonaws.com:3306/smart?characterEncoding=UTF-8"></property>
+		<property name="jdbcUrl" value="jdbc:mysql://13.209.224.247:3306/smart?characterEncoding=UTF-8&amp;serverTimezone=UTC"></property>
 		<property name="username" value="admin"></property>
 		<property name="password" value="qlsgus4613"></property>
 	</bean>
